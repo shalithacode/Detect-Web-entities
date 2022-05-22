@@ -68,3 +68,9 @@ h1 {
     opacity: 1;
   }
 }
+.form-control {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

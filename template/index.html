@@ -21,7 +21,9 @@
   <body>
     <h1>{{title}}</h1>
 
-    <form action="{{action}}" method="{{method}}">
+    <form action="{{action}}" method="{{method}}" enctype="multipart/form-data">
+      <input type="file" class="form-control" id="customFile" name="file" />
+
       <input class="btn" type="submit" value="{{value}}" />
     </form>
     <div class="container d-flex h-100">
