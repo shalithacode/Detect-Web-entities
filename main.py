@@ -121,6 +121,7 @@ def speech():
                 for n, i in enumerate(all_detactions)
                 if i not in all_detactions[n + 1 :]
             ],
+            default_image_url=default_image_url,
             action="/result",
             method="POST",
             value="Search",

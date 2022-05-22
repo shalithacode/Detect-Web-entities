@@ -31,7 +31,12 @@
         {% for i in all_detactions %} {% for k,v in i.items() %}
         <div class="card" style="width: 18rem">
           <a href="{{v}}" target="_blank">
-            <img class="card-img-top" src="{{k}}" alt="Card image cap" />
+            <img
+              class="card-img-top"
+              src="{{k}}"
+              alt="Card image cap"
+              onerror="this.onerror=null; this.src='{{default_image_url}}'"
+            />
             <div class="card-body">
               <p class="card-text">{{v|truncate(30, True, '...')}}</p>
             </div>
