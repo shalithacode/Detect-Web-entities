@@ -108,9 +108,11 @@ def speech():
 
                         partial_detactions.append({image_url: page.url})
                         break
+        else:
+            title = "No matching images found"
 
         all_detactions = partial_detactions + full_detactions
-        flash("Enter Valid File")
+        
         return render_template(
             "index.html",
             title=title,
